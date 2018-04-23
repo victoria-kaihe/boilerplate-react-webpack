@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import App from './App'
+import {Link} from 'react-router-dom'
 
 class SignUp extends React.Component {
     constructor(props) {
@@ -9,7 +11,9 @@ class SignUp extends React.Component {
     render () {
         return (
         <div>
+        <Link to={`/`}>
         <Header />
+        </ Link>
         <form>
         <div className="row">
           <div className="four columns">
